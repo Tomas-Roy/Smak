@@ -1,0 +1,156 @@
+@media all and (max-width: 1200px){
+    .doing-bottom {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .doing-rows {
+        margin-bottom: 3rem;
+    }
+    .brand-rows {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media all and (max-width: 991px){
+    .image-main {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .proud-boxes {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .service-area-up::after {
+        top: -2.5rem;
+    }
+    .review-up::after {
+        top: 7.5rem;
+    }
+    .from-row {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .from-row input:last-child{
+        grid-column: span 2;
+      }
+}
+@media all and (min-width:768px){
+    .menu-hdr {
+        display: block !important;
+    }
+}   
+@media all and (max-width:767px){
+    .menu-hdr {
+        position: absolute;
+        top: 56px;
+        width: 50%;
+        right: 0px;
+        flex-direction: column;
+        background: var(--color-p);
+        display: none;
+    }
+    .menu-hdr ul {
+        flex-direction: column;
+        padding: 3rem;
+    }
+    .menu-hdr ul li {
+        flex-direction: column;
+    }
+    .header-up {
+        align-items: unset;
+        flex-direction: column;
+    }
+    .logo .menu-icon{
+        display: block;
+    }
+    .header-bottom {
+        padding: 10rem 0;
+    }
+    .header-bottom-text h3 {
+        font-size: 4.5rem;
+    }
+    .service-area-up p {
+        max-width: 100%;
+    }
+    .service-area-bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-main {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+    }
+    .about-bottom-rows {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-bottom-main {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .team-bottom-rows {
+        margin-bottom: 3rem;
+    }
+    .skill-row {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .brand-rows {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .brand-row {
+        margin-bottom: 3rem;
+    }
+    
+}
+@media all and (max-width:575px){
+    .service-area-up::after {
+        top: -10rem;
+    }
+    .service-area-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .doing-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .work-bottom-two {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .work-bottom-image {
+        margin-bottom: 2rem;
+    }
+    .work-bottom-heading {
+        margin-left: 0rem;
+        text-align: center;
+    }
+    .image-main {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1rem;
+    }
+    .proud-boxes {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-bottom-main {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skill-row {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .brand-rows {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .review-up::after {
+        top: 12.5rem;
+    }
+    .from-row {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .from-row input:last-child{
+        grid-column: span 1;
+      }
+}
+@media all and (max-width:400px){
+    .header-bottom-text h3 {
+        font-size: 3.5rem;
+    }
+    .header-bottom {
+        padding: 5rem 0;
+    }
+    .service-area-up::after {
+        top: -15rem;
+    }
+    .review-up::after {
+        top: 15.5rem;
+    }
+}

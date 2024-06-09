@@ -1,0 +1,682 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+html {
+  font-size: 62.5%;
+}
+:root {
+  --color: #ffffff;
+  --colorsdw: #122a2f;
+  --color1:#ffe600;
+  --color-b: #131316;
+  --color-p: #707070;
+  --color-h: #515151;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+h1{
+  font-size: 7.2rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 3rem;
+}
+h4{
+  font-size: 1.4rem;
+}
+h5{
+  font-size:1.6rem ;
+  font-weight: 400;
+}
+p{
+  color: var(--color-p);
+  font-size: 1.6rem;
+}
+.container {
+  max-width: 117rem;
+  width: 90%;
+  margin: auto;
+}
+.section-padding{
+  padding: 6rem 0;
+}
+.btn-style a {
+  font-weight: 700;
+  padding: 1.5rem 5.5rem;
+  background: var(--color1);
+  color: var(--color);
+  transition: 1s;
+  text-transform: uppercase;
+}
+.btn-style a:hover{
+  background-color: var(--color-p);
+}
+img{
+  display: block;
+}
+.heading {
+	text-align: center;
+  margin-bottom: 6rem;
+}
+  /** ************************** **/
+ /** ***** 1. Header Area ***** **/
+/** ************************** **/
+
+.header-area{
+  background: url(../img/bg.jpg);
+  background-size: cover;
+}
+.header-up{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo .menu-icon{
+  display: none;
+}
+.logo .menu-icon i{
+	font-size: 4rem;
+	color: var(--color1);
+}
+.menu-hdr ul, .menu ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-hdr ul li a, .menu ul li a {
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 700;
+	transition: 1s;
+}
+.menu-hdr ul li a:hover, .menu ul li a:hover{
+  color: var(--color1);
+}
+.menu-hdr ul li i, .menu ul li i{
+  color: #fbad27;
+  font-size: .4rem;
+}
+.menu-hdr ul li, .menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-main{
+  background-color: #6464644b;
+}
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem 0;
+  text-align: center;
+}
+.header-bottom-text h3 {
+	margin: auto;
+	color: var(--color);
+	font-size: 6.5rem;
+	max-width: 75%;
+  font-weight: 700;
+}
+.header-bottom-shape {
+  background: #6464644b;
+  width: 100%;
+  padding: 3rem 0;
+}
+.header-btn{
+  margin: 3rem 0;
+}
+.scrool-icon{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.scrool-icon a {
+	display: flex;
+	flex-direction: column;
+	background: var(--color1);
+	padding: 1rem;
+}
+.scrool-icon a i {
+	font-size: 3rem;
+	color: var(--color);
+}
+  /** *************************** **/
+ /** ***** 2. Service Area ***** **/
+/** *************************** **/
+
+.service-heading{
+  margin-bottom: 5rem;
+}
+.service-heading  h5{
+  color: var(--color-h);
+}
+.service-heading h3{
+  color: var(--color-b);
+  margin-top: 2rem;
+}
+.service-area-up {
+	position: relative;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+.service-area-up::after {
+	position: absolute;
+	content: "";
+	height: .3rem;
+	width: 15rem;
+	background: var(--color1);
+	top: 1.5rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.service-area-up p{
+  font-size: 1.6rem;
+  color: var(--color-p);
+  max-width: 80%;
+  margin: auto;
+}
+.service-area-bottom{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5rem;
+}
+.service-bottom-rows{
+  text-align: center;
+}
+.service-icon a i {
+	font-size: 3rem;
+	padding: 3rem;
+	color: var(--color);
+	background: var(--color1);
+	border: 1px solid transparent;
+	border-radius: 50%;
+}
+.service-icon a i:hover{
+  background: var(--color);
+  color: var(--color1);
+  border: 1px solid var(--color-b);
+}
+.service-bottom-rows h2 {
+	margin: 1.5rem 0;
+  font-weight: 700;
+  color: var(--color-b);
+}
+.service-bottom-rows p{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+  /** ************************* **/
+ /** ***** 3. Doing Area ***** **/
+/** ************************* **/
+.doing-area{
+  background: var(--color-b);
+}
+.doing-up {
+	text-align: center;
+	margin-bottom: 6rem;
+}
+.doing-up h3{
+  color: var(--color1);
+  margin-bottom: 2rem;
+}
+.doing-up p{
+  color: var(--color);
+}
+.doing-bottom{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+}
+.doing-icon i{
+  color: var(--color1);
+}
+.doing-rows h2{
+  margin: 1.5rem 0;
+  font-weight: 700;
+  color: var(--color);
+}
+.doing-rows p{
+  color: var(--color);
+}
+.doing-icon i{
+  font-size: 5rem;
+}
+.doing-rows{
+  text-align: center;
+}
+  /** *************************** **/
+ /** ******* 4. Work Area ****** **/
+/** *************************** **/
+.work-menu ul {
+	display: flex;
+	margin-bottom: 5rem;
+	flex-wrap: wrap;
+}
+.work-menu ul li a{
+  color: var(--color-b);
+}
+.work-menu ul .active a{
+  color: var(--color1);
+}
+.work-bottom-image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.work-bottom-two{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.work-bottom-heading h3{
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--color-b);
+}
+.work-bottom-heading{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+.work-bottom-heading p{
+  margin: 2rem 0;
+}
+.work-btn{
+  margin-top: 3rem;
+}
+  /** ************************** **/
+ /** ***** 5. Image Area ****** **/
+/** ************************** **/
+.image-row img{
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+.image-main {
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+}
+.image-row {
+  position: relative;
+  transition: .5s;
+  overflow: hidden;
+}
+.work-overly {
+  position: absolute;
+  background: #cfc20c;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  transform: scale(0);
+  opacity: 0;
+}
+.work-overly a {
+  color: var(--color);
+  font-size: 2rem;
+}
+.image-row:hover img {
+  transform: scale(1.1);
+}
+.image-row:hover .work-overly {
+  transform: scale(1);
+  opacity: 1;
+}
+.image-bottom{
+  text-align: center;
+}
+.image-social-icon{
+  margin-top: 2rem;
+}
+.image-bottom h3 {
+	margin: 5rem 0 2.5rem 0;
+}
+.image-btn{
+  margin-top: 6rem;
+}
+  /** ************************** **/
+ /** ***** 6. Proud Area ****** **/
+/** ************************** **/
+.proud-area{
+  background: var(--color-b);
+}
+.proud-up h3{
+  color: var(--color);
+}
+.proud-boxes{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 4rem;
+}
+.proud-box{
+  border: 1px solid var(--color1);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.proud-box h2{
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color);
+}
+.proud-box p{
+  color: var(--color1);
+}
+  /** ************************** **/
+ /** ***** 7. About Area ****** **/
+/** ************************** **/
+.about-bottom-rows {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 5rem;
+}
+.about-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-icon i {
+	color: var(--color);
+	font-size: 3rem;
+	padding: 3rem;
+	background: var(--color1);
+	border-radius: 50%;
+	width: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90px;
+}
+.about-icon {
+	margin-right: 2rem;
+}
+.about-heading h2{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-b);
+  margin-bottom: 1rem;
+}
+.about-heading p{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.about-area-up::after {
+	top: 1.5rem;
+}
+  /** ************************** **/
+ /** ***** 8. Team Area ****** **/
+/** ************************** **/
+.team-area{
+  padding-bottom: 0;
+}
+.team-up h3{
+  color: var(--color-b);
+}
+.team-up p{
+  color: var(--color-p);
+}
+.team-rows-image img {
+	height: 30rem;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.team-bottom-main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 3rem;
+}
+.team-bottom-rows{
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px solid var(--color-h);
+}
+.team-heading {
+	text-align: center;
+	margin: 1.3rem 0;
+}
+.team-heading h2{
+  color: var(--color1);
+  font-weight: 400;
+}
+.team-area-main {
+	margin-bottom: 5rem;
+}
+.team-details-main {
+	max-width: 65%;
+	margin: auto;
+	padding: 5rem 0;
+}
+.team-details-area {
+	background: var(--color-b);
+}
+.team-details-main h2 {
+	font-size: 2rem;
+	color: var(--color1);
+	font-weight: 400;
+}
+.team-details-main p {
+	color: var(--color);
+	margin: 3rem 0;
+}
+.team-details-icon a {
+	border: 1px solid var(--color);
+	padding: 1rem;
+	text-align: center;
+}
+.team-details-icon a i {
+	font-size: 2.5rem;
+	height: 25px;
+	width: 25px;
+}
+.team-details-icon a{
+  margin: 0 2rem;
+}
+.team-details-icon a:nth-child(1){
+  margin: 0;
+}
+  /** ************************** **/
+ /** ***** 9. Skill Area ****** **/
+/** ************************** **/
+.skill-area{
+	background: var(--colorsdw);
+}
+.skill-up h3{
+  color: var(--color);
+}
+.skill-row {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 5rem;
+}
+.skill-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skill-image h2 {
+	font-size: 2rem;
+	margin: 2rem 0;
+	color: var(--color1);
+}
+  /** ************************** **/
+ /** ***** 10. Brand Area ***** **/
+/** ************************** **/
+.brand-rows {
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-gap: 5rem;
+  margin-bottom: 3rem;
+}
+.brand-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand-icon {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+}
+.brand-icon a {
+	display: flex;
+	background: var(--color1);
+	padding: 1rem;
+	margin: 0 4rem;
+}
+.brand-icon a i {
+	font-size: 2rem;
+	color: var(--color);
+}
+  /** ************************** **/
+ /** **** 11. Review Area ***** **/
+/** ************************** **/
+.review-area {
+	background: var(--color-b);
+}
+.review-heading h3 {
+	font-size: 2rem;
+	max-width: 60rem;
+	margin: auto;
+	font-weight: 400;
+  color: var(--color);
+}
+.review-up p{
+  color: var(--color);
+}
+.review-up {
+	margin-bottom: 0;
+}
+.review-up::after {
+	top: 7.5rem;
+}
+  /** ************************** **/
+ /** **** 12. Contact Area **** **/
+/** ************************** **/
+.contact-bottom{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 5rem;
+}
+.contact-rows h2{
+  color: var(--color-b);
+  font-weight: 400;
+}
+.contact-rows p{
+  color: var(--color-p);
+}
+  /** ************************** **/
+ /** ***** 13. Mail Area ****** **/
+/** ************************** **/
+.mail-area{
+  background: #131a1d;
+}
+.mail-up h3, .mail-up p{
+  color: var(--color);
+}
+.from-row {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 5rem;
+  margin-bottom: 3rem;
+}
+input{
+	padding: 2rem 1rem;
+	width: 100%;
+  color: var(--color);
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--color);
+}
+textarea{
+  width: 100%;
+  padding: 3rem 5rem;
+  background: transparent;
+  color: var(--color);
+  outline: none;
+  border: 1px solid var(--color);
+  margin-bottom: 3rem;
+}
+::placeholder{
+  opacity: 1;
+}
+.from-area{
+  text-align: center;
+}
+.sub-btn {
+	padding: 1.5rem 3rem;
+	color: var(--color-b);
+	background: var(--color1);
+	border: none;
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+  /** ************************** **/
+ /** ***** 14. Footer Area ****** **/
+/** ************************** **/
+.footer-area{
+  background: var(--color-b);
+}
+.footer-main {
+	text-align: center;
+}
+.footer-main p{
+  padding-top: 5rem;
+  color: var(--color);
+}
+.footer-main ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5rem 0;
+}
+.footer-main ul li a{
+  padding: 2rem 1.5rem;
+}
+.footer-main ul li a:hover i{
+  color: var(--color1);
+}
+.footer-main ul li a i{
+  color: var(--color);
+  font-size: 1.6rem;
+  transition: 1s;
+}
